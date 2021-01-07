@@ -1,0 +1,53 @@
+.getStartedContainer {
+    margin-bottom: 5rem;
+}
+
+.getStartedItemsContainer {
+    gap: 1rem;
+}
+
+.getStartedSubitem {
+    padding-left: 2rem;
+}
+
+.menuItemContainer {
+    margin-bottom: 5rem;
+}
+
+.menuItemHeading {
+    text-align: center;
+}
+
+.menuItemContent {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem 0;
+}
+
+.menuItemImg {
+    max-width: 100%;
+}
+
+.menuItemList {
+    list-style: square;
+    columns: 2;
+}
+
+.top {
+  display: flex;
+  gap: 3rem;
+}
+
+.top > * {
+  flex-basis: 100%;
+}
+
+.bottom {
+  display: flex;
+  gap: 3rem;
+}
+
+.bottom > * {
+  flex-basis: 100%;
+}

@@ -1,0 +1,47 @@
+.menuItemContainer {
+  margin-bottom: 6rem;
+}
+
+.menuItemHeading {
+  text-align: center;
+}
+
+.menuItemContent {
+  display: flex;
+  gap: 3rem;
+  padding: 2rem 0;
+  height: 80vh;
+}
+
+.right,
+.left {
+  flex: 1 1 50%;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 20px;
+  padding: 2rem;
+  padding-bottom: 0;
+  overflow-y: scroll;
+}
+
+.right > * {
+  margin-bottom: 2rem;
+}
+
+.menuItemImg {
+  max-width: 100%;
+}
+
+.menuItemList {
+  list-style: square;
+  columns: 2;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}

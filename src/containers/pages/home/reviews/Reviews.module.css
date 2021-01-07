@@ -1,0 +1,30 @@
+.reviewsContainer {
+  width: 100%;
+  background-image: url(../../../../assets/img/primary/CookiesChocolateChip.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 6rem 0;
+}
+
+.content {
+  height: 60vh;
+}
+
+.heading {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.quotesContainer {
+  display: flex;
+  gap: var(--col-gap);
+}
+
+.quote {
+  flex-basis: 100%;
+  font-size: 1.25rem;
+  font-weight: 500;
+}

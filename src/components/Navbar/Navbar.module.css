@@ -1,0 +1,20 @@
+.navbarContainer {
+  z-index: 9000;
+  width: 70%;
+  margin-left: 15%;
+  top: 1rem;
+  display: flex;
+}
+
+.navlink {
+  color: var(--primary);
+  margin: 0 1rem;
+  font-size: 18px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 150ms;
+}
+
+.navlink:hover {
+  color: var(--primary);
+  border-bottom: 1px solid var(--secondary);
+}

@@ -1,0 +1,25 @@
+.featuresSection {
+  margin: 6rem auto;
+}
+
+.featuresContainer {
+    display: flex;
+    gap: var(--col-gap);
+}
+
+.feature {
+    flex-basis: 100%;
+    height: 100%;
+    margin-top: 4rem;
+}
+
+.featureIcon {
+    width: 100%;
+    height: 4rem;
+    margin-bottom: 1rem;
+}
+
+.featureHeader {
+}
+
+/* Remove to make text left aligned */

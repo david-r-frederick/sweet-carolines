@@ -1,13 +1,48 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+:root {
+  --primary: #2a353a !important;
+  --secondary: #fa9396;
+  --pink-old: #fa9396;
+  --gold-old: #fbd0a5;
+  --light-bluegray-old: #c5dbd8;
+  --green-old: #91c5b9;
+  --dark-bluegray-old: #6c8a94;
+  --dark: #1b1b1b;
+  --sect-width: 70%;
+  --sect-margin: 15%;
+  --col-gap: 5rem;
+  --bg-neutral: #eee;
+  --bg-overlay: rgba(255, 255, 255, 0.8);
+}
+
+@import '~bootstrap/dist/css/bootstrap.css';
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Source Sans Pro';
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.mt-nav {
+  margin-top: 9rem;
+}
+
+.no-bullet {
+  list-style: none;
 }

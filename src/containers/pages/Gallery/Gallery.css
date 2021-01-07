@@ -1,0 +1,7 @@
+.gallery-photo img {
+  height: 600px;
+}
+
+.image-gallery-content.left.fullscreen .gallery-photo img {
+  height: 100%;
+}
