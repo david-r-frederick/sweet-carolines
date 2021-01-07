@@ -18,9 +18,7 @@ const Features = (props) => {
                     <BiTimer className={classes.featureIcon} />
                     <h3>Quick Responses</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iste maxime autem ab, beatae
-                        facilis dolorem totam eum neque ex tempora ut natus distinctio excepturi qui, itaque delectus
-                        labore deserunt!
+                        We care about our customers and that means meeting their questions and requests as quickly as possible. Whether it's email or Facebook, you can expect a response from us within 2 hours.
                     </p>
                 </div>
                 <div className={classes.feature}>
@@ -34,7 +32,7 @@ const Features = (props) => {
                     <RiDoorOpenFill className={classes.featureIcon} />
                     <h3>Always Open</h3>
                     <p>
-                        We're available
+                        We're available for any pick up time and any delivery time (when delivery is available), so there's no need to worry about store hours!
                     </p>
                 </div>
             </div>

@@ -3,12 +3,16 @@
 :root {
   --primary: #2a353a !important;
   --secondary: #fa9396;
-  --pink-old: #fa9396;
+  --pink-old: #faa4a7;
   --gold-old: #fbd0a5;
   --light-bluegray-old: #c5dbd8;
   --green-old: #91c5b9;
   --dark-bluegray-old: #6c8a94;
   --dark: #1b1b1b;
+  --palette-green: #CCF6C8;
+  --palette-pink: #f9c0c0;
+  --palette-yellow: #fafcc2;
+  --palette-orange: #f6d6ad;
   --sect-width: 70%;
   --sect-margin: 15%;
   --col-gap: 5rem;
@@ -45,4 +49,28 @@ code {
 
 .no-bullet {
   list-style: none;
+}
+
+.flex-basis-0 {
+  flex-basis: 0;
+}
+
+.flex-basis-100 {
+  flex-basis: 100%;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.gap-3 {
+  gap: 3rem;
+}
+
+.gap-4 {
+  gap: 4rem;
 }

@@ -14,8 +14,8 @@ class Home extends Component {
                             <h2>Sweet Treats</h2>
                             <h2>For every occasion</h2>
                             <div className={classes.linksContainer}>
-                                <Link className={classes.headerWelcomeLinkOne}>Get Started</Link>
-                                <Link className={classes.headerWelcomeLinkTwo}>Gallery</Link>
+                                <Link to="/menu" className={classes.headerWelcomeLinkOne}>Get Started</Link>
+                                <Link to="/gallery" className={classes.headerWelcomeLinkTwo}>Gallery</Link>
                             </div>
                         </div>
                     </div>

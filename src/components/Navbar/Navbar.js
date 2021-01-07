@@ -43,30 +43,36 @@ const Navbar = (props) => {
                         </li>
                         <li className="nav-item dropdown">
                             <Link
-                                className={`nav-link dropdown-toggle ${classes.navlink}`}
+                                className={`nav-link dropdown-toggle ${classes.navlink} ${classes.aboutLink}`}
                                 id="navbarDropdown"
                                 role="button"
                                 data-bs-toggle="dropdown"
                                 aria-expanded="false"
-                                onClick={() => setShowAbout(!showAbout)}
+                                onMouseOver={() => setShowAbout(true)}
+                                onMouseLeave={() => setShowAbout(false)}
                             >
                                 About
                             </Link>
-                            <ul className={`dropdown-menu ${showAbout ? 'show' : ''}`} aria-labelledby="navbarDropdown">
+                            <ul
+                                className={`dropdown-menu mt-0 ${showAbout ? 'show' : ''}`}
+                                aria-labelledby="navbarDropdown"
+                                onMouseOver={() => setShowAbout(true)}
+                                onMouseLeave={() => setShowAbout(false)}
+                            >
                                 <li>
-                                    <a className="dropdown-item" href="/">
+                                    <Link className="dropdown-item" to="/your-baker">
                                         Your Baker
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" href="/faqs">
+                                    <Link className="dropdown-item" to="/faqs">
                                         FAQs
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" href="/terms">
+                                    <Link className="dropdown-item" to="/terms">
                                         Terms and Conditions
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </li>

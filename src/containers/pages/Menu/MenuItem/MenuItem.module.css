@@ -42,6 +42,6 @@
   columns: 2;
 }
 
-::-webkit-scrollbar {
+.right::-webkit-scrollbar {
   width: 0px;
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import classes from './Contact.module.css';
+import jigglypuffImg from '../../../assets/img/primary/CakeJigglypuff.jpg';
 
 class Contact extends Component {
     state = {
@@ -14,17 +15,13 @@ class Contact extends Component {
         return (
             <section className={`mt-nav container`} id="contact">
                 <div className={`container ${classes.headingContainer}`}>
-                    <h2 className={`${classes.heading} position-absolute`}>We're happy to hear from you</h2>
-                </div>
-                <div className="container">
-                    <form method="post" action="#" className={classes.contactForm}>
+                    <img className={`${classes.contactImg} col col-lg-6`} src={jigglypuffImg} alt="" />
+                    <form method="post" action="#" className={`${classes.contactForm} col-lg-6`}>
+                        <h2 className={`${classes.heading}`}>We're happy to hear from you</h2>
                         <div className={`${classes.row} row`}>
-                            <div className="col col-lg-4">
-                                <label for="name">Name</label>
-                            </div>
-                            <div className="col col-lg-8">
+                            <div className="col col-lg-6">
                                 <input
-                                    className="w-100"
+                                    className={`w-100 rounded border-0 px-2 py-2`}
                                     type="text"
                                     name="name"
                                     id="name"
@@ -37,14 +34,9 @@ class Contact extends Component {
                                     required
                                 />
                             </div>
-                        </div>
-                        <div className={`${classes.row} row`}>
-                            <div className="col col-lg-4">
-                                <label for="email">Email</label>
-                            </div>
-                            <div className="col col-lg-8">
+                            <div className="col col-lg-6">
                                 <input
-                                    className="w-100"
+                                    className={`w-100 rounded border-0 px-2 py-2`}
                                     type="email"
                                     name="email"
                                     id="email"
@@ -59,16 +51,17 @@ class Contact extends Component {
                             </div>
                         </div>
                         <div className={`${classes.row} row`}>
-                            <div className="col col-lg-4">
-                                <label for="find-us">How did you find us?</label>
+                            <div className="col col-lg-6">
+                                <label for="email">How did you find us?</label>
                             </div>
-                            <div className="col col col-lg-8">
+                            <div className="col col col-lg-6">
                                 <select
                                     onChange={(event) => {
                                         this.setState({
                                             howFind: event.target.value,
                                         });
                                     }}
+                                    className={`w-100 rounded border-0 px-2 py-2`}
                                     name="find-us"
                                     id="find-us"
                                 >
@@ -82,11 +75,7 @@ class Contact extends Component {
                             </div>
                         </div>
                         <div className={`${classes.row} row`}>
-                            <div className="col col-lg-4">
-                                <label for="newsletter">Newsletter</label>
-                                <br />
-                            </div>
-                            <div className="col col-lg-8">
+                            <div className="col col-lg-12">
                                 <input
                                     className="mr-3"
                                     type="checkbox"
@@ -107,17 +96,14 @@ class Contact extends Component {
                             </div>
                         </div>
                         <div className={`${classes.row} row`}>
-                            <div className="col col-lg-4">
-                                <label>Drop us a line</label>
-                            </div>
-                            <div className="col col-lg-8">
+                            <div className="col col-lg-12">
                                 <textarea
                                     onChange={(event) => {
                                         this.setState({
                                             message: event.target.value,
                                         });
                                     }}
-                                    className="w-100"
+                                    className={`${classes.textArea} w-100 rounded border-0 px-2 py-2 h-100`}
                                     name="message"
                                     placeholder="Your message"
                                 ></textarea>
@@ -128,9 +114,14 @@ class Contact extends Component {
                                 <label>&nbsp;</label>
                             </div>
                             <div className="col col-lg-8">
-                                <button onClick={() => {
-                                  //do stuff
-                                }} className="btn btn-success">Send</button>
+                                <button
+                                    onClick={() => {
+                                        //do stuff
+                                    }}
+                                    className={`btn ${classes.submitBtn}`}
+                                >
+                                    Send
+                                </button>
                             </div>
                         </div>
                     </form>
